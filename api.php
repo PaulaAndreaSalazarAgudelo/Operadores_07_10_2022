@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin:*');
 header('Content-type:application/json;charset=utf-8');
 $res=new stdClass();
 
-$num1=1;
+$num1=3;
 $num2=2;
 $res->num1=$num1;
 $res->num2=$num2;
@@ -63,7 +63,4 @@ $res->redondear=$redondear;
 $res->servidor=
 $_SERVER["HTTP_HOST"];
 
-echo json_encode($res,JSON_PRETTY_PRINT); 
-
-?>
-
+echo json_encode($res,JSON_PRETTY_PRINT);
